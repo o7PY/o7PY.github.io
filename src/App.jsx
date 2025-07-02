@@ -365,8 +365,8 @@ export default function App() {
               },
               {
                 title: "Club Website",
-                desc: "I develop and maintain a modular static website to showcase our club’s activities, achievements, and updates. Its flexible design makes it easy to add new content, ensuring the site stays current and relevant for members and visitors.",
-                image: "https://github.com/o7PY/o7PY.github.io/blob/main/src/assets/club.png",
+                desc: "I develop and maintain a modular static website to showcase our club’s activities, achievements, and updates. Its flexible design makes it easy to add new content.",
+                image: "https://github.com/o7PY/o7PY.github.io/blob/main/src/assets/club.png?raw=true",
                 link: 'https://vicharaka.iisc.ac.in/'
               }
             ].map((project, index) => (
@@ -381,6 +381,7 @@ export default function App() {
                   <a
                     href={project.link}
                     className="inline-block border border-cyan-500 text-cyan-400 hover:bg-cyan-500/10 hover:border-cyan-400 hover:text-cyan-300 rounded-full px-4 py-2 transition-colors"
+                    target="_blank"
                   >
                     View Project
                   </a>
@@ -405,19 +406,32 @@ export default function App() {
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
-                  <a href="mailto:john@example.com" className="hover:text-cyan-400 transition-colors">john@example.com</a>
+                  <a href="mailto:pragnyay@iisc.ac.in" className="hover:text-cyan-400 transition-colors">pragnyay@iisc.ac.in</a>
                 </div>
                 <div className="flex items-center gap-3">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M22 12h-4l-3 9L9 3l-3 9H2" />
                   </svg>
-                  <a href="https://linkedin.com/in/johndoe" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400 transition-colors">LinkedIn</a>
+                  <a href="https://www.linkedin.com/in/pragnyay/" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400 transition-colors">LinkedIn</a>
                 </div>
                 <div className="flex items-center gap-3">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
                   </svg>
-                  <a href="https://github.com/johndoe" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400 transition-colors">GitHub</a>
+                  <a href="https://github.com/o7PY" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400 transition-colors">GitHub</a>
+                </div>
+                <div className="flex items-center gap-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-5 w-5 text-cyan-400"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M14 2H6a2 2 0 0 0-2 2v16c0 1.1.9 2 2 2h12a2 2 0 0 0 2-2V8l-6-6zM13 9V3.5L18.5 9H13z"
+                    />
+                  </svg>
+                  <a href="https://indianinstituteofscience-my.sharepoint.com/:b:/g/personal/pragnyay_iisc_ac_in/Efmp3kvGSV5PrmqQEFxcTFQBlibt_TggA9g7TnWqrUVpqQ?e=SbiaPI" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400 transition-colors">Resume</a>
                 </div>
               </div>
             </div>
