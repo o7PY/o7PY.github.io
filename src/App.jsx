@@ -320,7 +320,7 @@ export default function App() {
           <h2 className="text-3xl md:text-4xl font-bold mb-10 text-center">Skills</h2>
           <div className="space-y-6">
             {[
-              ["HTML", "CSS", "HTML/CSS", "ROS", "Gazebo", "MATLAB"],
+              ["C++", "Python", "HTML/CSS", "ROS", "Gazebo", "MATLAB"],
               ["Deep Learning & Neural Networks", "PyTorch", "Computer Vision"],
               ["SOLIDWORKS", "Git", "Latex", "Odometry", "SLAM", "DSA"],
               ["Control Systems", "PID", "Computer Organization and Design"]
@@ -358,16 +358,16 @@ export default function App() {
                 link: "https://github.com/o7PY/o7PY.github.io"
               },
               {
-                title: "Task Management App",
-                desc: "A productivity tool built with React and Firebase for managing daily tasks efficiently.",
-                image: "https://placehold.co/600x400/1a1a1a/white?text=Task+App",
-                link: '#'
+                title: "European Rover Challenge",
+                desc: "Worked as an Assistant Software Lead in ERC25, implementing an Autonomous System which works using Visual Intertial Odometry.",
+                image: "https://o7py.github.io/CLUB-VICHARAKA/images/ERC_2025/Rover_img.png",
+                link: 'https://o7py.github.io/CLUB-VICHARAKA/ERC_2025.html'
               },
               {
-                title: "Weather Dashboard",
-                desc: "Real-time weather app using OpenWeatherMap API with responsive design.",
-                image: "https://placehold.co/600x400/1a1a1a/white?text=Weather+App",
-                link: '#'
+                title: "Club Website",
+                desc: "I develop and maintain a modular static website to showcase our club’s activities, achievements, and updates. Its flexible design makes it easy to add new content, ensuring the site stays current and relevant for members and visitors.",
+                image: "https://github.com/o7PY/o7PY.github.io/blob/main/src/assets/club.png",
+                link: 'https://vicharaka.iisc.ac.in/'
               }
             ].map((project, index) => (
               <div
