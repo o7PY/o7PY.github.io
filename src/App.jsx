@@ -3,7 +3,9 @@ import { motion } from "framer-motion";
 import { useLayoutEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-
+import myImage from './assets/profile.jpg';
+import portfolioImage from './assets/portfolio.png';
+import { link } from 'framer-motion/client';
 
 export default function App() {
   const [activeSection, setActiveSection] = useState('home');
@@ -254,7 +256,7 @@ export default function App() {
           <div className="flex flex-col md:flex-row items-center gap-10">
             <div className="w-full md:w-1/3">
               <img
-                src="./src/assets/profile.jpg"
+                src={myImage}
                 alt="Profile"
                 className="rounded-lg shadow-xl border border-cyan-500/30 transform transition-transform hover:scale-105 duration-300"
               />
@@ -352,17 +354,20 @@ export default function App() {
               {
                 title: "Portfolio Website",
                 desc: "A personal portfolio built with React and TailwindCSS showcasing my projects and skills.",
-                image: "https://placehold.co/600x400/1a1a1a/white?text=Portfolio"
+                image: "https://github.com/o7PY/o7PY.github.io/blob/main/src/assets/portfolio.png?raw=true",
+                link: "https://github.com/o7PY/o7PY.github.io"
               },
               {
                 title: "Task Management App",
                 desc: "A productivity tool built with React and Firebase for managing daily tasks efficiently.",
-                image: "https://placehold.co/600x400/1a1a1a/white?text=Task+App"
+                image: "https://placehold.co/600x400/1a1a1a/white?text=Task+App",
+                link: '#'
               },
               {
                 title: "Weather Dashboard",
                 desc: "Real-time weather app using OpenWeatherMap API with responsive design.",
-                image: "https://placehold.co/600x400/1a1a1a/white?text=Weather+App"
+                image: "https://placehold.co/600x400/1a1a1a/white?text=Weather+App",
+                link: '#'
               }
             ].map((project, index) => (
               <div
@@ -374,7 +379,7 @@ export default function App() {
                   <h3 className="text-xl font-bold mb-2">{project.title}</h3>
                   <p className="text-gray-400 mb-4">{project.desc}</p>
                   <a
-                    href="#"
+                    href={project.link}
                     className="inline-block border border-cyan-500 text-cyan-400 hover:bg-cyan-500/10 hover:border-cyan-400 hover:text-cyan-300 rounded-full px-4 py-2 transition-colors"
                   >
                     View Project
@@ -417,7 +422,7 @@ export default function App() {
               </div>
             </div>
             <div className="md:w-1/2">
-              <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" className="space-y-4">
+              <form action="https://formspree.io/f/mzzgwebq" method="POST" className="space-y-4">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-1">Name</label>
                   <input type="text" id="name" name="name" required
